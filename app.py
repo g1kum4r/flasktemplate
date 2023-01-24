@@ -1,0 +1,1 @@
+from govdata import create_app

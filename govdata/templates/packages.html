@@ -1,0 +1,11 @@
+{% block form %}
+<form>
+    <input type="text" name="q" autofocus="on">
+    <button type="submit">Search</button>
+</form>
+{% endblock %}
+{% block results %}
+{% for i in results %}
+{{ i }}
+{% endfor %}
+{% endblock %}
