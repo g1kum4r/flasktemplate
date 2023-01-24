@@ -5,4 +5,4 @@ from govdata.packages import bp
 def search():
     user_inputs = request.args
     # TODO your implementation goes here
-    return render_template("packages.html", results=user_inputs.values() )
+    return render_template("packages.html", results = list(i for i in user_inputs.values() if i != "") )
